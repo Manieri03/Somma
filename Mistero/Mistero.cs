@@ -50,7 +50,7 @@ namespace LibraryMistero
             {
                 return Mistero4(n / 10);
             }
-            throw new Exception("non va ");
+            throw new Exception("non va");
             
 
         }
