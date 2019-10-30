@@ -8,7 +8,7 @@ namespace LibraryMistero
     {
         static void Main(string[] args)
         {
-            int r = Mistero.Mistero6(10,8);
+            int r = Mistero.Mistero3(1,8);
             Console.WriteLine(r);
             Console.ReadLine();
         }

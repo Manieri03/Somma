@@ -115,6 +115,32 @@ namespace LibraryMistero
 
             }
 
+
         }
+        public static int funzSomma(int x,int y)
+        {
+            if (y == 0)
+            {
+                return x;
+            }
+            else if (y > 0)
+            {
+                return 1 + (funzSomma(x, y - 1));
+            }
+            else throw new Exception("y<0");
+        }
+        public static int funzProdotto(int x, int y)
+        {
+            if (y == 0)
+            {
+                return 0;
+            }
+            else if (y > 0)
+            {
+                return funzSomma (x,funzProdotto(x, y - 1));
+            }
+            else throw new Exception(" y<0");
+        }
+
     }
 }
